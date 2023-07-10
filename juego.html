@@ -3,9 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ProyectoFinal-Mateo Rivas</title>
+    <link rel="stylesheet" href="./styleJuego.css">
+    <link rel="icon" href="./assets/imagenes/logo.png">
+    <title>Proyecto Final-Mateo Rivas</title>
 </head>
-<body>
-    
+<body class="body-all">
+    <nav class="menu">
+        <a href="index.html"></a>
+        <ul>
+            <li class="item-menu">
+                <a class="item-link" href="./historia.html">HISTORIA</a>
+            </li>
+            <li class="item-menu">
+                <a class="item-link" href="./index.html">INICIO</a>
+            </li>
+        </ul>
+    </nav>
+    <header>
+        <h1 class="titulo-blanco">JUGUEMOS UN POCO</h1>
+    </header>
+    <main>
+        <h2>Armemos el rompecabezas y veamos que imagen es...</h2>
+        <section class="game">
+            <div class="boxes">
+                <div class="box" id="boxdrop1">
+                    <p>Arrastre y suelte la imágen aquí</p>
+                </div>
+                <div class="box" id="boxdrop2">
+                    <p>Arrastre y suelte la imágen aquí</p>
+                </div>
+                <div class="box" id="boxdrop3">
+                    <p>Arrastre y suelte la imágen aquí</p>
+                </div>
+            </div>
+            <div id="boxImg">
+                <img id="img1" src="assets/imagenes/rompe2.png">
+                <img id="img2" src="assets/imagenes/Rompe1.png">
+                <img id="img3" src="assets/imagenes/Rompe3.png">
+            </div>
+            <button onclick="reset()" class="botonesVideo reinicio">Reiniciar</button>
+            </section>
+    </main>
+    <footer>
+        <div class="footer-left">
+            <img class="logo" src="./assets/imagenes/logo.png" alt="logo">
+            <h3 class="titulo-blanco titulo-foot">PROGRAMACIÓN <br> E <br> HISTORIA </h3>
+        </div>
+        </div>Sitio con fines educativos - Creado por Mateo Rivas</div>
+    </footer>
+    <script src="scriptGame.js"></script>
 </body>
 </html>

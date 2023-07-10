@@ -144,20 +144,20 @@ h2 {
 footer {
     display: flex;
     background-color: #678983;
-    color: #181D31; 
+    color: #181D31;
     height: 100px;
     padding: 40px;
     justify-content: space-between;
     align-items: center;
 }
 
-.footer-left{
+.footer-left {
     display: flex;
     width: 300px;
     height: 60px;
     justify-content: space-between;
 }
 
-.titulo-foot{
+.titulo-foot {
     font-size: 15px;
 }
