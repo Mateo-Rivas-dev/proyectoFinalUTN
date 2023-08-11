@@ -1,8 +1,6 @@
 * {
     font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: auto 0px;
 }
 
 .body-all {
@@ -13,7 +11,6 @@
 p {
     color: #E6DDC4;
 }
-
 /*-logo-*/
 rect#pc1, polygon#tec1{
     animation: parte_1 ease-in 5s;
@@ -61,6 +58,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     margin: 10px 40px;
+    
 }
 
 main {
@@ -114,7 +112,7 @@ header {
     font-size: 30px;
     justify-content: space-around;
     align-items: center;
-    padding: 0px 10px;
+    padding: 0px 100px;
 }
 
 .titulo-blanco {
@@ -204,6 +202,59 @@ h2 {
 .text-historia {
     width: 45%;
 }
+
+/*-----video-------*/
+
+.cont-video {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.duracion-total {
+    color: white;
+    text-align: right;
+}
+
+.barra-rep {
+    display: flex;
+    background-color: #1d1d1d;
+    border-radius: 10px;
+    padding: 2px 5px;
+    justify-content: space-between;
+}
+
+.botones {
+    display: flex;
+    gap: 20px;
+
+}
+
+.cont {
+    background-color: black;
+    padding: 5px;
+    width: 70%;
+}
+
+#play, #pause {
+    width: 65px;
+}
+
+.botonesVideo:hover {
+    box-shadow: 0px 0px darkgray;
+    transform: translate(3px, 2px);
+    transition: all 0.4s ease;
+}
+
+#showTime {
+    padding-top: 28px;
+    padding-right: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
 
 /*--footer--*/
 

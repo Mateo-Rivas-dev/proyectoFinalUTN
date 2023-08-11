@@ -1,16 +1,37 @@
 /*--------Video de la pestaña Historia------*/
 
-let video= document.querySelector("video");
-let botonPlay= document.querySelector("play");
-let botonPause= document.querySelector("pause");
+document.addEventListener("DOMContentLoaded", function(){
+    
+    let video = document.getElementById("myVideo");
+    let botonPlay = document.getElementById("play");
+    let botonPause = document.getElementById("pause");
+    let showTimeElement = document.getElementById('showTime');
 
+  video.addEventListener('loadedmetadata', ()=>{    
+    let duration = video.duration.toFixed(2);
+    showTimeElement.innerHTML = `0:00 / ${formatTime(duration)}`;
+  });
 
-setTimeout(()=>{document.getElementById('showTime').innerHTML=` Duracion video : ${video.duration.toFixed(2)}`},1000);
+  video.addEventListener('timeupdate', ()=>{
+    let currentTime = video.currentTime.toFixed(2);
+    let duration = video.duration.toFixed(2);
+    showTimeElement.innerHTML = `${formatTime(currentTime)} / ${formatTime(duration)}`;
+  });
 
-for (let i = 0; i < video.tim; i++){
-    console.log(video.currentTime)
-}
+  botonPlay.addEventListener('click', ()=>{
+    video.play();
+  });
 
-playBoton.addEventListener('click',()=>{
-    video.play()
+  botonPause.addEventListener('click', ()=>{
+    video.pause();
+  });
+
+  function formatTime(time) {
+    let minutes = Math.floor(time / 60);
+    let seconds = Math.floor(time % 60);
+    seconds = seconds < 10 ? `0${seconds}` : seconds;
+
+    return `${minutes}:${seconds}`;
+  }
 });
+

@@ -1,8 +1,6 @@
 * {
     font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: auto 0px;
 }
 
 .body-all {
@@ -13,7 +11,6 @@
 p {
     color: #E6DDC4;
 }
-
 /*-logo-*/
 rect#pc1, polygon#tec1{
     animation: parte_1 ease-in 5s;
@@ -53,6 +50,7 @@ rect#pc2, polygon#tec2{
         opacity: 1;
     }
 }  
+
 
 /*-nav-*/
 
@@ -203,6 +201,62 @@ h2 {
 
 .text-historia {
     width: 45%;
+}
+
+/*-----Juego----*/
+
+.game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boxes {
+    display: flex;
+    flex-direction: row;
+}
+
+.box {
+    display: flex;
+    background-color: grey;
+    width: 275px;
+    height: 400px;
+    border: 2px solid black;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.box:hover {
+    background-color: #1d1d1d;
+}
+
+.caja:hover > p {
+    color: #E6DDC4;
+}
+
+#boxImagenes {
+    display: flex;
+    margin: 40px;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#img1,#img2,#img3 {
+    width: 275px;
+    height: 400px;
+}
+
+.reinicio {
+    display: flex;
+    padding: 10px 100px;
+    margin: auto;
+}
+
+.botonesVideo:hover {
+    box-shadow: 0px 0px darkgray;
+    transform: translate(3px, 2px);
+    transition: all 0.4s ease;
 }
 
 /*--footer--*/

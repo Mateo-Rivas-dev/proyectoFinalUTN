@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+     
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styleGame.css">
     <link rel="icon" href="./assets/imagenes/logo.png">
     <title>Proyecto Final-Mateo Rivas</title>
 </head>
+
 <body class="body-all">
     <nav>
-        <a href="index.html"></a>
+        <a href="index.html">
+            <svg  width="200" height="80" >
+                <rect x="45" y="5" width="60" height="35" rx="5" id="pc1" fill="#F0E9D2"></rect>
+                <rect x="50" y="10" width="50" height="25" rx="5" id="pc2" fill="#495579"></rect>
+                <polygon points="57 45 ,93 45,115 62,30 62" fill="#F0E9D2" id="tec1"></polygon>
+                <polygon points="57 48 ,92 48,104 58,43 58" fill="#495579" id="tec2"></polygon>
+            </svg>
+        </a>
+        
         <ul class="menu">
             <li class="item-menu"><a class="item-link" href="./index.html">INICIO</a></li>
             <li class="item-menu"><a class="item-link" href="./historia.html">HISTORIA</a></li>
@@ -33,7 +43,7 @@
                     <p>Arrastre y suelte la imágen aquí</p>
                 </div>
             </div>
-            <div id="boxImg">
+            <div id="boxImagenes">
                 <img id="img1" src="assets/imagenes/rompe2.png">
                 <img id="img2" src="assets/imagenes/Rompe1.png">
                 <img id="img3" src="assets/imagenes/Rompe3.png">
@@ -48,6 +58,6 @@
         </div>
         </div>Sitio con fines educativos - Creado por Mateo Rivas</div>
     </footer>
-    <script src="scriptGame.js"></script>
+    <script src="./scriptGame.js"></script>
 </body>
 </html>
