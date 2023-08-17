@@ -21,7 +21,7 @@ rect#pc1, polygon#tec1{
 }
 
 rect#pc2, polygon#tec2{
-    animation: parte_2 ease-in 7s;
+    animation: parte_2 ease-in 6s;
     animation-iteration-count: 1;
 }
 
@@ -303,7 +303,7 @@ h2 {
 .reinicio {
     display: flex;
     padding: 10px 100px;
-    margin: auto;
+    margin-bottom: 30px;
 }
 
 .botonesVideo:hover {
